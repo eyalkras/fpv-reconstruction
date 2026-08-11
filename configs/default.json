@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "status": "extract-from-canonical-notebook-before-batch-1",
+  "note": "Populate this file from the exact notebook defaults before the first controlled validation run."
+}
+
