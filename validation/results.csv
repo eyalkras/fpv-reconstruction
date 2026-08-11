@@ -1,0 +1,2 @@
+run_id,video_id,run_date_utc,git_commit,notebook_config_id,gpu,drive_output_url,status,runtime_sec,peak_gpu_memory_mb,frames_requested,frames_decoded,frames_selected,frames_used,trusted_pose_count,trusted_pose_percent,geometry_components,translation_outlier_count,rotation_outlier_count,glb_available,png_available,visual_assessment,failure_category,notes
+
