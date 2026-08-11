@@ -2,6 +2,22 @@
 
 Updated: 2026-08-11
 
+## Durable project repository
+
+Private GitHub repository:
+
+`https://github.com/eyalkras/fpv-reconstruction`
+
+Local repository package:
+
+`C:\Users\Cyber_AI\Desktop\fpv-reconstruction`
+
+The GitHub `main` branch is the durable source for project instructions, decisions, the clean canonical notebook, validation schemas, and compact reports. Google Drive remains the source for large videos and generated run artifacts.
+
+Canonical clean-notebook SHA256 at repository initialization:
+
+`1B8C422C47A89F8E42C578691B3E1717D60CADC45C1BBE167AF15CEE44456352`
+
 ## Objective
 
 Build one reliable, organized Google Colab notebook that accepts a direct FPV video URL and produces a defensible VGGT-based reconstruction. The important user-facing outputs are:
@@ -161,4 +177,3 @@ After fixing any systematic problems found in Batch 1, validate on another four 
 Tell Codex:
 
 > Read `C:\Users\Cyber_AI\FPV_PROJECT_FOCUSED_HANDOFF.md` completely. Inspect the canonical local notebook and shared Drive notebook. Verify current files and outputs rather than trusting stale statements. Continue from `Next action`. Preserve one canonical notebook and update this handoff whenever a material decision, fix, test result, or path changes.
-
