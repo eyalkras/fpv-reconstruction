@@ -2,6 +2,8 @@
 
 This repository contains the finished relative-reconstruction baseline and its compact supporting evidence.
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX)
+
 ## Open these in order
 
 1. [`docs/FPV_Project_Guide.pdf`](docs/FPV_Project_Guide.pdf) - concise project explanation.
@@ -11,7 +13,7 @@ This repository contains the finished relative-reconstruction baseline and its c
 
 ## Live notebook
 
-Open the shared notebook in [Google Colab](https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX).
+Use the **Open in Colab** button above. It opens the verified runnable Drive copy; GitHub keeps the clean, output-free source version.
 
 Use a T4 GPU or better, add a Hugging Face read token as the Colab secret `HF_TOKEN`, paste one direct video URL, and choose **Runtime -> Run all**.
 

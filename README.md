@@ -2,6 +2,10 @@
 
 This private repository contains the finished relative-reconstruction baseline, its review material, and the durable project memory.
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX)
+
+Use the button above to open the verified runnable copy. The clean, output-free source notebook remains versioned in GitHub at [`notebooks/FPV_Reconstruction.ipynb`](notebooks/FPV_Reconstruction.ipynb).
+
 For a short project review, start with [`PRESENTATION.md`](PRESENTATION.md).
 
 Start with [`PROJECT_STATE.md`](PROJECT_STATE.md). Future Codex sessions should also read [`AGENTS.md`](AGENTS.md) before changing the project.

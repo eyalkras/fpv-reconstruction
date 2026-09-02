@@ -2,6 +2,8 @@
 
 ## 2026-09-02
 
+- Added a prominent GitHub **Open in Colab** button that routes to the verified
+  shared Drive notebook, avoiding the current private-repository importer issue.
 - Created a compact review entrypoint in `PRESENTATION.md`.
 - Added a one-page four-video validation summary.
 - Rebuilt the six-page project guide so it uses the corrected true-scale
