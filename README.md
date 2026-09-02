@@ -18,7 +18,7 @@ Start with [`PROJECT_STATE.md`](PROJECT_STATE.md). Future Codex sessions should 
 
 ## Current objective
 
-Validate one canonical Google Colab notebook across representative FPV videos before attempting metric scale or geographic alignment.
+Present the validated relative-reconstruction baseline, collect reviewer feedback, and convert that feedback into a prioritized next-stage plan. Metric scale and geographic alignment remain outside the current baseline.
 
 ## Canonical notebook
 
@@ -28,9 +28,10 @@ The GitHub copy should remain free of execution outputs. Executed copies belong 
 
 ## Review material
 
-- [`docs/FPV_Project_Guide.pdf`](docs/FPV_Project_Guide.pdf)
-- [`docs/FPV_Example_Run.pdf`](docs/FPV_Example_Run.pdf)
-- [`docs/FPV_Validation_Summary.pdf`](docs/FPV_Validation_Summary.pdf)
+- [Download the project guide](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Project_Guide.pdf)
+- [Download the example run](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Example_Run.pdf)
+- [Download the validation summary](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Validation_Summary.pdf)
+- [Open the document index](docs/README.md)
 
 ## Resume in a new Codex chat
 

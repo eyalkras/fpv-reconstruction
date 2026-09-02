@@ -21,5 +21,6 @@ Working rules:
 
 ## Next action
 
-Build the four-video Batch 1 manifest from the linked public dataset, then run and score those videos with identical default settings.
-
+Present the packaged baseline and four-video evidence, record reviewer feedback,
+and convert it into a prioritized change list. Do not begin metric scale or
+geographic alignment until the baseline review is complete.

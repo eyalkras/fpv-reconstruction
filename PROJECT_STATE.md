@@ -39,11 +39,11 @@ Local clean copy:
 
 Current local baseline-candidate SHA256:
 
-`9E2E5E0632A001477EB8ACAC1347D52F5C22AF4334CA4215A2F36FF29A60DC90`
+`2C32F493D213315F25B02D668E42ABDF4E86A307CC3098FD813931E3A6C50E`
 
 Current shared Colab SHA256 after the 2026-08-31 trajectory-visualization update:
 
-`9E2E5E0632A001477EB8ACAC1347D52F5C22AF4334CA4215A2F36FF29A60DC90`
+`2C32F493D213315F25B02D668E42ABDF4E86A307CC3098FD813931E3A6C50E`
 
 Executed Drive timing-fix validation copy (kept as evidence):
 
@@ -118,6 +118,13 @@ unchanged from the four-video validated baseline. The uploaded notebook was
 opened in Colab; the URL form executed correctly and the Results cell parsed
 and reached its expected missing-prerequisites guard when run alone. The clean
 zero-output copy was then restored in place.
+
+On 2026-09-02, the `Run` Markdown section was marked collapsed in Colab
+metadata. This is a presentation-only change: all 50 processing cells inside
+the section were already source-hidden, and no executable source changed. The
+clean notebook replaced the shared Drive file in place and retained its URL.
+GitHub review links were changed to explicit PDF downloads to avoid reliance on
+GitHub's in-browser PDF preview.
 
 On 2026-08-31, the trajectory output was corrected without changing VGGT
 inference, preprocessing, keyframe selection, or raw pose export. The per-frame
@@ -206,22 +213,25 @@ Create one row per video with at least:
 - Result: `PASS`, `QUESTIONABLE`, or `FAIL`
 - Failure category and notes
 
-### Controlled keyframe experiment
+### Optional post-review keyframe experiment
 
 For only one or two representative videos, compare lower/default/higher keyframe counts. Measure reconstruction quality, trusted poses, continuity, runtime, and GPU memory. Do not select a higher count merely because the point cloud appears denser.
 
-### Batch 2
+### Optional post-review Batch 2
 
 After fixing any systematic problems found in Batch 1, validate on another four to eight unseen videos. Rerun only cases affected by code or threshold changes.
 
-## Planned deliverables
+## Delivered baseline artifacts
 
-- `validation_manifest.csv`
-- `validation_results.csv`
-- Concise validation report
-- Recommended default settings
-- Known failure modes and thresholds
-- Evidence-based decision about whether the notebook is ready for metric scaling
+- `validation/manifest.csv`
+- `validation/results.csv`
+- `validation/REPORT.md`
+- `configs/default.json`
+- `docs/FPV_Project_Guide.pdf`
+- `docs/FPV_Example_Run.pdf`
+- `docs/FPV_Validation_Summary.pdf`
+- Evidence-based conclusion: ready for baseline review, not yet ready to claim
+  metric scale or geographic coordinates
 
 ## Compute and access boundaries
 

@@ -2,6 +2,11 @@
 
 Status: Batch 1 complete. All four representative runs produced auditable outputs; the timing-fix candidate passed both fresh-video checks.
 
+The four validation runs predate creation of the durable GitHub repository, so
+their `git_commit` field is explicitly recorded as `not_recorded_pre_repository`
+rather than presenting an invented commit identifier. Their configuration IDs,
+saved artifacts, and notebook SHA evidence remain recorded.
+
 ## Verified run 1 — Adaissah howitzer
 
 - Run: `baseline_validation_20260811_r01`
@@ -57,7 +62,9 @@ Status: Batch 1 complete. All four representative runs produced auditable output
   fix keeps the geometrically connected reconstruction but makes motion edges
   non-comparable across retained-segment boundaries and breaks the displayed
   motion path there. Offline replay predicts corrected counts of 1 translation
-  and 3 rotation warnings; a Colab rerun is still required to record new files.
+  and 3 rotation warnings. The saved Namer artifacts intentionally retain their
+  original pre-fix counts; the general fix was later accepted in fresh Kfar
+  Tebnit and Majdal Zoun Colab runs.
 
 ## Defect found and fixed
 
@@ -121,8 +128,8 @@ claiming a new VGGT inference run.
 
 Both added path breaks are retained-segment boundaries. Geometry remains one
 connected component in each run. The candidate reconstruction cell also passed
-static Python syntax parsing with zero errors. A fresh Colab execution remains
-the required acceptance test.
+static Python syntax parsing with zero errors. Fresh Kfar Tebnit and Majdal Zoun
+Colab executions subsequently passed and supplied the acceptance evidence.
 
 ## Batch 1 design
 

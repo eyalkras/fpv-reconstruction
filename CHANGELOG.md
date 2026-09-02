@@ -2,6 +2,14 @@
 
 ## 2026-09-02
 
+- Marked the notebook's `Run` section collapsed by default without changing
+  executable code, then updated the shared Colab file in place.
+- Replaced GitHub PDF-preview links with explicit authenticated downloads and
+  added a compact `docs/README.md` document index.
+- Rechecked all 14 PDF pages, embedded PDF links, notebook structure, validation
+  tables, public video URLs, and saved Drive deliverables.
+- Corrected stale README and `AGENTS.md` next-action text that still described
+  Batch 1 as pending even though all four runs are complete.
 - Added a prominent GitHub **Open in Colab** button that routes to the verified
   shared Drive notebook, avoiding the current private-repository importer issue.
 - Created a compact review entrypoint in `PRESENTATION.md`.
