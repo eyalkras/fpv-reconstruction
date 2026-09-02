@@ -1,6 +1,8 @@
 # FPV Reconstruction
 
-This private repository is the durable project memory and versioned source for the FPV video reconstruction project.
+This private repository contains the finished relative-reconstruction baseline, its review material, and the durable project memory.
+
+For a short project review, start with [`PRESENTATION.md`](PRESENTATION.md).
 
 Start with [`PROJECT_STATE.md`](PROJECT_STATE.md). Future Codex sessions should also read [`AGENTS.md`](AGENTS.md) before changing the project.
 
@@ -20,9 +22,14 @@ Validate one canonical Google Colab notebook across representative FPV videos be
 
 The GitHub copy should remain free of execution outputs. Executed copies belong in Google Drive.
 
+## Review material
+
+- [`docs/FPV_Project_Guide.pdf`](docs/FPV_Project_Guide.pdf)
+- [`docs/FPV_Example_Run.pdf`](docs/FPV_Example_Run.pdf)
+- [`docs/FPV_Validation_Summary.pdf`](docs/FPV_Validation_Summary.pdf)
+
 ## Resume in a new Codex chat
 
 Use this instruction:
 
 > Read `AGENTS.md` and `PROJECT_STATE.md` completely, inspect the canonical notebook and validation files, verify current repository state instead of trusting stale assumptions, and continue from `Next action`.
-

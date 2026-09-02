@@ -28,3 +28,10 @@ Do not assume more keyframes are better. Compare lower, default, and higher coun
 
 Every run receives `PASS`, `QUESTIONABLE`, or `FAIL`, with an explicit reason and links to evidence.
 
+## Trajectory visualization
+
+Camera trajectories must preserve the actual relative coordinate proportions. The
+primary output shows an orthographic true-scale 3D path plus equal-scale top and
+side views. Direct VGGT poses are never visually smoothed. Retained-video cuts,
+unavailable poses, and translation-outlier edges remain in the raw CSV but are
+not connected or interpolated in presentation paths.

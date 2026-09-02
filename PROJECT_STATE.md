@@ -1,6 +1,6 @@
 # FPV Reconstruction — Focused Handoff
 
-Updated: 2026-08-11
+Updated: 2026-09-02
 
 ## Durable project repository
 
@@ -35,7 +35,27 @@ The later objective is metric scale and geographic alignment (`altitude, latitud
 
 Local clean copy:
 
-`C:\Users\Cyber_AI\Desktop\FPV_Reconstruction.ipynb`
+`C:\Users\Cyber_AI\Desktop\fpv-reconstruction\notebooks\FPV_Reconstruction.ipynb`
+
+Current local baseline-candidate SHA256:
+
+`9E2E5E0632A001477EB8ACAC1347D52F5C22AF4334CA4215A2F36FF29A60DC90`
+
+Current shared Colab SHA256 after the 2026-08-31 trajectory-visualization update:
+
+`9E2E5E0632A001477EB8ACAC1347D52F5C22AF4334CA4215A2F36FF29A60DC90`
+
+Executed Drive timing-fix validation copy (kept as evidence):
+
+`https://colab.research.google.com/drive/1GuKUMiHjKmIqkxuQ8NaZrrE2qWm0DPOa`
+
+Local pre-validation safety snapshot:
+
+`safety_snapshots/FPV_Reconstruction_pre_baseline_validation_20260826.ipynb`
+
+Local pre-organization safety snapshot:
+
+`safety_snapshots/FPV_Reconstruction_pre_ux_cleanup_20260826.ipynb`
 
 Shared Google Drive folder:
 
@@ -53,17 +73,65 @@ Colab URL:
 
 `https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX`
 
-Verified shared-notebook structure on 2026-08-11:
+Drive pre-validation safety copy:
+
+`https://colab.research.google.com/drive/18XSYSbQpyjU65A0Gyn91RMhrhNbBiyaJ`
+
+On 2026-08-26 the clean local candidate replaced the shared file in place
+after a source-cell comparison. The shared file now has 58 cells, no saved
+execution outputs, clean default input values, and the robust reusable-model
+memory guard. The previous executed shared state remains available in the
+Drive safety copy above.
+
+After that promotion, source review of Run 2 exposed one general diagnostic
+defect: motion was divided by the compressed clean-timeline gap across a
+retained-segment boundary. The local candidate now uses source time only for
+comparable edges inside the same retained segment and geometry component. This
+does not alter VGGT inference or discard connected poses. On 2026-08-26 it
+passed fresh Colab runs on Kfar Tebnit and Majdal Zoun; both saved boundary rows
+correctly blank motion values and break the path while preserving one connected
+geometry component.
+
+Verified shared-notebook structure on 2026-08-26:
 
 - 58 cells total
 - 54 code cells
 - 4 Markdown cells
 - Setup code collapsed
+- Blank, prominent direct-URL input form
+- Optional input settings collapsed
+- Main GLB, PNG, CSV, and ZIP links shown first in Results
+- Main reconstruction, interactive 3D, selected keyframes, and trajectory PNG visible
 - Resilient end-of-video decoding (`TERMINAL_EOF_CLAMP`)
 - Motion-sanity analysis present
-- Drive copy contains saved execution outputs
+- Shared canonical has no saved execution outputs
 
-The Drive notebook is larger than the local clean copy because it contains saved outputs. Cell count and important source features match the intended modern notebook.
+The shared canonical now contains the clean timing-fix source that passed the
+Kfar Tebnit and Majdal Zoun Colab runs. The separate executed candidate remains
+available as validation evidence; the shared file has the same stable file ID
+and no saved execution outputs.
+
+The final presentation cleanup changed only code cells 3, 4, and 57: the input
+form, the optional-settings title/visibility, and the Results display order.
+All preprocessing, VGGT inference, timing, trajectory, and saving cells are
+unchanged from the four-video validated baseline. The uploaded notebook was
+opened in Colab; the URL form executed correctly and the Results cell parsed
+and reached its expected missing-prerequisites guard when run alone. The clean
+zero-output copy was then restored in place.
+
+On 2026-08-31, the trajectory output was corrected without changing VGGT
+inference, preprocessing, keyframe selection, or raw pose export. The per-frame
+result now shows a true-proportion orthographic 3D path plus equal-scale top and
+side views. It never smooths direct VGGT poses, and it does not connect or
+interpolate across retained-video cuts, unavailable poses, or warned
+translation jumps. Offline replay against all four saved validation CSVs
+confirmed that Adaissah's apparently scrambled path was mainly an axis-scaling
+artifact, while the known Kfar discontinuity is now displayed as a path break.
+The edited Python cells pass static syntax validation. A fresh Adaissah Colab
+run completed through the Results cell and visually confirmed the true-scale
+3D/top/side output. Kfar's saved trusted-trajectory CSV was replayed through
+the same break rule and confirmed that its warned translation edge becomes a
+disconnected run rather than a fabricated line or interpolation.
 
 ## Important implementation decisions
 
@@ -164,13 +232,19 @@ After fixing any systematic problems found in Batch 1, validate on another four 
 - Legitimate alternatives include waiting for quota recovery, using an authorized available runtime, reducing compute, or using paid/cloud GPU capacity.
 - The computer/browser must remain awake while an interactive Colab run is active.
 
+## Current validation status
+
+- Batch 1 manifest: complete (four selected videos).
+- Run 1, Adaissah howitzer: completed with warnings.
+- Run 2, Namer APC near Khiam: completed with warnings.
+- Run 3, Kfar Tebnit: completed with warnings, 40/40 trusted poses.
+- Run 4, Majdal Zoun excavator: completed with warnings, 27/28 trusted poses.
+
 ## Next action
 
-1. Build the four-video Batch 1 manifest from the GitHub catalog.
-2. Record the exact canonical notebook/configuration identifier.
-3. Run the videos sequentially when an authorized GPU is available.
-4. Read the saved Drive artifacts and populate the validation results table.
-5. Decide whether to fix the notebook or proceed to Batch 2.
+1. Present the packaged baseline, corrected example run, and four-video evidence.
+2. Record reviewer feedback and convert it into a prioritized change list.
+3. Defer metric scale and geographic alignment until after the baseline review.
 
 ## Instructions for a new Codex session
 

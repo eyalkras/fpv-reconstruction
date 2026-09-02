@@ -1,6 +1,61 @@
 {
-  "schema_version": 1,
-  "status": "extract-from-canonical-notebook-before-batch-1",
-  "note": "Populate this file from the exact notebook defaults before the first controlled validation run."
+  "schema_version": 2,
+  "status": "baseline_candidate",
+  "recorded_at": "2026-08-26",
+  "notebook": {
+    "path": "notebooks/FPV_Reconstruction.ipynb",
+    "sha256": "06C3DBE485DD8DD4AD4547B14607443E0A03DD648C39E481974314FC1173330B",
+    "cell_count": 58,
+    "execution_outputs_present": false
+  },
+  "pipeline": {
+    "pipeline_version": "fpv_reconstruction_resilient_decode",
+    "stage1_version": "stage1_candidate_v5_post_replay_scene_gate",
+    "stage2_version": "stage2_vggt_omega_resilient_decode",
+    "stage3_version": "stage3_per_frame_research_decode_aware"
+  },
+  "input": {
+    "mode": "url",
+    "force_download": false,
+    "run_suffix": ""
+  },
+  "keyframes": {
+    "candidate_fps": 4.0,
+    "max_candidates": 240,
+    "target_fps": 1.0,
+    "max_model_frames": 48,
+    "min_model_frames": 4,
+    "min_per_stage1_segment": 1
+  },
+  "model": {
+    "family": "VGGT-Omega",
+    "model_id": "facebook/VGGT-Omega",
+    "repository_commit": "39a0cb8af88554f15ddcb5354cd52bde588fa014",
+    "checkpoint": "vggt_omega_1b_512.pt",
+    "image_resolution": 512,
+    "preprocess_mode": "balanced",
+    "precision": "float32",
+    "minimum_free_gpu_memory_gb_for_fresh_load": 10.0,
+    "allow_degraded_gpu_result": false
+  },
+  "geometry": {
+    "confidence_percentile": 50.0,
+    "filter_depth_edges": true,
+    "depth_edge_relative_tolerance": 0.03,
+    "max_export_points": 750000,
+    "max_interactive_points": 80000,
+    "show_cameras_in_glb": true,
+    "filter_sky": false,
+    "mask_black_background": false,
+    "mask_white_background": false
+  },
+  "trajectory": {
+    "per_frame_analysis_width": 320,
+    "kinematic_time_base": "source_time_within_retained_segment",
+    "break_motion_at_retained_segment_boundary": true,
+    "break_motion_at_geometry_component_boundary": true,
+    "coordinate_scale": "relative_model_units",
+    "metric_scale_available": false,
+    "absolute_geolocation_available": false
+  }
 }
-
