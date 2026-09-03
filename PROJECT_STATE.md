@@ -1,6 +1,6 @@
 # FPV Reconstruction — Focused Handoff
 
-Updated: 2026-09-02
+Updated: 2026-09-03
 
 ## Durable project repository
 
@@ -37,13 +37,13 @@ Local clean copy:
 
 `C:\Users\Cyber_AI\Desktop\fpv-reconstruction\notebooks\FPV_Reconstruction.ipynb`
 
-Current local baseline-candidate SHA256:
+Current local baseline-candidate SHA256 after the presentation-only Colab metadata fix:
 
-`2C32F493D213315F25B02D668E42ABDF4E86A307CC3098FD813931E3A6C50E`
+`7CFB89F3803F6E41092BFD08E5E71CC7C34F7FF9C7FF51BEEAC8A9A7118A7E2C`
 
-Current shared Colab SHA256 after the 2026-08-31 trajectory-visualization update:
+Current shared Colab SHA256 after the 2026-09-03 presentation-only metadata fix:
 
-`2C32F493D213315F25B02D668E42ABDF4E86A307CC3098FD813931E3A6C50E`
+`7CFB89F3803F6E41092BFD08E5E71CC7C34F7FF9C7FF51BEEAC8A9A7118A7E2C`
 
 Executed Drive timing-fix validation copy (kept as evidence):
 
@@ -119,12 +119,13 @@ opened in Colab; the URL form executed correctly and the Results cell parsed
 and reached its expected missing-prerequisites guard when run alone. The clean
 zero-output copy was then restored in place.
 
-On 2026-09-02, the `Run` Markdown section was marked collapsed in Colab
-metadata. This is a presentation-only change: all 50 processing cells inside
-the section were already source-hidden, and no executable source changed. The
-clean notebook replaced the shared Drive file in place and retained its URL.
-GitHub review links were changed to explicit PDF downloads to avoid reliance on
-GitHub's in-browser PDF preview.
+On 2026-09-03, the `Run` Markdown section ID was placed in Colab's notebook-level
+`collapsed_sections` list. This is the metadata Colab actually uses to close a
+section when the notebook opens. The earlier cell-level flag alone was
+insufficient. This remains a presentation-only change: all 50 processing cells
+inside the section were already source-hidden, and executable source is
+byte-for-byte unchanged. GitHub review links use direct PDF downloads because
+GitHub's inline PDF preview can fail even for valid PDFs.
 
 On 2026-08-31, the trajectory output was corrected without changing VGGT
 inference, preprocessing, keyframe selection, or raw pose export. The per-frame

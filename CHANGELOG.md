@@ -1,9 +1,20 @@
 # Changelog
 
+## 2026-09-03
+
+- Corrected Colab's notebook-level `collapsed_sections` metadata so the `Run`
+  section is actually closed when the notebook opens; executable code is
+  byte-for-byte unchanged.
+- Confirmed that all three PDFs are structurally valid and render correctly.
+  Kept direct-download links as the reliable route around GitHub's current
+  inline PDF-preview failure.
+- Repeated the notebook, document, link, validation-data, Drive-output, archive,
+  and repository-integrity checks before publication.
+
 ## 2026-09-02
 
-- Marked the notebook's `Run` section collapsed by default without changing
-  executable code, then updated the shared Colab file in place.
+- Added an initial cell-level collapsed marker to `Run` without changing
+  executable code; the notebook-level correction followed on 2026-09-03.
 - Replaced GitHub PDF-preview links with explicit authenticated downloads and
   added a compact `docs/README.md` document index.
 - Rechecked all 14 PDF pages, embedded PDF links, notebook structure, validation

@@ -6,6 +6,9 @@ This repository contains the finished relative-reconstruction baseline and its c
 
 ## Open these in order
 
+Use the **Download** links below. GitHub's inline PDF preview can show an error
+even when a PDF is valid; these links open the original verified files directly.
+
 1. [Download the project guide](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Project_Guide.pdf) - concise project explanation.
 2. [Download the example run](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Example_Run.pdf) - visual walkthrough from a video URL to the final outputs.
 3. [Download the validation summary](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Validation_Summary.pdf) - one-page evidence summary across four representative videos.

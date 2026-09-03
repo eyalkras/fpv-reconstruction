@@ -1,6 +1,7 @@
 # Review Documents
 
-Use these direct download links. They avoid GitHub's inconsistent in-browser PDF preview.
+Use these direct download links. GitHub's inline PDF preview can show an error
+even when a PDF is valid; these links open the original verified files directly.
 
 1. [Project guide](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Project_Guide.pdf)
 2. [Example run](https://github.com/eyalkras/fpv-reconstruction/raw/refs/heads/main/docs/FPV_Example_Run.pdf)
