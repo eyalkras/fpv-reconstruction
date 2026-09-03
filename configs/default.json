@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "status": "baseline_candidate",
-  "recorded_at": "2026-08-26",
+  "status": "validated_baseline",
+  "recorded_at": "2026-09-03",
   "notebook": {
     "path": "notebooks/FPV_Reconstruction.ipynb",
-    "sha256": "06C3DBE485DD8DD4AD4547B14607443E0A03DD648C39E481974314FC1173330B",
+    "sha256": "F445EF9FDA021E34A6113027D46E490C98C3545A70B1082D6CBDDE57F3D376FC",
     "cell_count": 58,
     "execution_outputs_present": false
   },

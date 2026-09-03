@@ -18,9 +18,16 @@ even when a PDF is valid; these links open the original verified files directly.
 
 Use the **Open in Colab** button above. It opens the clean, verified notebook directly from this public GitHub repository.
 
-Use a T4 GPU or better, add a Hugging Face read token as the Colab secret `HF_TOKEN`, paste one direct video URL, and choose **Runtime -> Run all**.
+Before the first run:
 
-The GitHub repository is public. Before external review, make sure the reviewer can also access the shared Colab notebook and linked Drive evidence folders.
+1. [Accept the VGGT-Omega access conditions](https://huggingface.co/facebook/VGGT-Omega).
+2. [Create a Hugging Face token](https://huggingface.co/settings/tokens) with **read** access.
+3. In Colab, select a **T4 GPU** or better.
+4. Open **Secrets** using the key icon, add the token with the exact name `HF_TOKEN`, and enable **Notebook access**. Never paste the token into the notebook code.
+5. Paste one direct video URL and choose **Runtime -> Run all**.
+
+The GitHub repository and canonical notebook are public. Saved example outputs
+remain in Google Drive and may require separate access.
 
 ## Example evidence
 

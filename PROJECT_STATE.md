@@ -37,13 +37,13 @@ Local clean copy:
 
 `C:\Users\Cyber_AI\Desktop\fpv-reconstruction\notebooks\FPV_Reconstruction.ipynb`
 
-Current local baseline-candidate SHA256 after the presentation-only Colab metadata fix:
+Current canonical notebook SHA256 after the presentation-only opening-instructions update:
 
-`7CFB89F3803F6E41092BFD08E5E71CC7C34F7FF9C7FF51BEEAC8A9A7118A7E2C`
+`F445EF9FDA021E34A6113027D46E490C98C3545A70B1082D6CBDDE57F3D376FC`
 
-Current shared Colab SHA256 after the 2026-09-03 presentation-only metadata fix:
+Current shared Colab SHA256 after the 2026-09-03 presentation-only opening-instructions update:
 
-`7CFB89F3803F6E41092BFD08E5E71CC7C34F7FF9C7FF51BEEAC8A9A7118A7E2C`
+`F445EF9FDA021E34A6113027D46E490C98C3545A70B1082D6CBDDE57F3D376FC`
 
 Executed Drive timing-fix validation copy (kept as evidence):
 
@@ -261,4 +261,4 @@ After fixing any systematic problems found in Batch 1, validate on another four 
 
 Tell Codex:
 
-> Read `C:\Users\Cyber_AI\FPV_PROJECT_FOCUSED_HANDOFF.md` completely. Inspect the canonical local notebook and shared Drive notebook. Verify current files and outputs rather than trusting stale statements. Continue from `Next action`. Preserve one canonical notebook and update this handoff whenever a material decision, fix, test result, or path changes.
+> Read `C:\Users\Cyber_AI\Desktop\fpv-reconstruction\AGENTS.md` and `C:\Users\Cyber_AI\Desktop\fpv-reconstruction\PROJECT_STATE.md` completely. Inspect the canonical local notebook and shared Drive notebook. Verify current files and outputs rather than trusting stale statements. Continue from `Next action`. Preserve one canonical notebook and update `PROJECT_STATE.md` whenever a material decision, fix, test result, or path changes.

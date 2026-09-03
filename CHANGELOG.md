@@ -2,6 +2,12 @@
 
 ## 2026-09-03
 
+- Added a final public quick-start covering the current GitHub PDF-preview
+  workaround and the complete gated-model/Colab `HF_TOKEN` setup.
+- Added the same concise token instructions to the notebook's opening panel;
+  reconstruction and validation logic remain unchanged.
+- Updated `configs/default.json` from its stale candidate label and old notebook
+  hash to the current validated-baseline status and canonical SHA256.
 - Made the reviewed repository public and updated the review instructions so
   they no longer request private GitHub access.
 - Routed the public **Open in Colab** buttons directly to the canonical GitHub
@@ -19,7 +25,7 @@
 
 - Added an initial cell-level collapsed marker to `Run` without changing
   executable code; the notebook-level correction followed on 2026-09-03.
-- Replaced GitHub PDF-preview links with explicit authenticated downloads and
+- Replaced GitHub PDF-preview links with explicit direct downloads and
   added a compact `docs/README.md` document index.
 - Rechecked all 14 PDF pages, embedded PDF links, notebook structure, validation
   tables, public video URLs, and saved Drive deliverables.
