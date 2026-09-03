@@ -2,9 +2,9 @@
 
 This public repository contains the finished relative-reconstruction baseline, its review material, and the durable project memory.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/eyalkras/fpv-reconstruction/blob/main/notebooks/FPV_Reconstruction.ipynb)
 
-Use the button above to open the verified runnable copy. The clean, output-free source notebook remains versioned in GitHub at [`notebooks/FPV_Reconstruction.ipynb`](notebooks/FPV_Reconstruction.ipynb).
+Use the button above to open the clean, verified notebook directly from this public repository. The same output-free source remains versioned at [`notebooks/FPV_Reconstruction.ipynb`](notebooks/FPV_Reconstruction.ipynb).
 
 For a short project review, start with [`PRESENTATION.md`](PRESENTATION.md).
 

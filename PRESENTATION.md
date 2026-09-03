@@ -2,7 +2,7 @@
 
 This repository contains the finished relative-reconstruction baseline and its compact supporting evidence.
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/eyalkras/fpv-reconstruction/blob/main/notebooks/FPV_Reconstruction.ipynb)
 
 ## Open these in order
 
@@ -16,7 +16,7 @@ even when a PDF is valid; these links open the original verified files directly.
 
 ## Live notebook
 
-Use the **Open in Colab** button above. It opens the verified runnable Drive copy; GitHub keeps the clean, output-free source version.
+Use the **Open in Colab** button above. It opens the clean, verified notebook directly from this public GitHub repository.
 
 Use a T4 GPU or better, add a Hugging Face read token as the Colab secret `HF_TOKEN`, paste one direct video URL, and choose **Runtime -> Run all**.
 

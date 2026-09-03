@@ -4,6 +4,8 @@
 
 - Made the reviewed repository public and updated the review instructions so
   they no longer request private GitHub access.
+- Routed the public **Open in Colab** buttons directly to the canonical GitHub
+  notebook so external reviewers do not need access to the internal Drive copy.
 - Corrected Colab's notebook-level `collapsed_sections` metadata so the `Run`
   section is actually closed when the notebook opens; executable code is
   byte-for-byte unchanged.
