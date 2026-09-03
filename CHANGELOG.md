@@ -2,6 +2,8 @@
 
 ## 2026-09-03
 
+- Made the reviewed repository public and updated the review instructions so
+  they no longer request private GitHub access.
 - Corrected Colab's notebook-level `collapsed_sections` metadata so the `Run`
   section is actually closed when the notebook opens; executable code is
   byte-for-byte unchanged.

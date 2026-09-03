@@ -20,7 +20,7 @@ Use the **Open in Colab** button above. It opens the verified runnable Drive cop
 
 Use a T4 GPU or better, add a Hugging Face read token as the Colab secret `HF_TOKEN`, paste one direct video URL, and choose **Runtime -> Run all**.
 
-Before external review, grant the reviewer access to this private GitHub repository, the shared Colab notebook, and the linked Drive evidence folders.
+The GitHub repository is public. Before external review, make sure the reviewer can also access the shared Colab notebook and linked Drive evidence folders.
 
 ## Example evidence
 

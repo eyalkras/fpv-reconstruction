@@ -4,7 +4,7 @@ Updated: 2026-09-03
 
 ## Durable project repository
 
-Private GitHub repository:
+Public GitHub repository:
 
 `https://github.com/eyalkras/fpv-reconstruction`
 

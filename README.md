@@ -1,6 +1,6 @@
 # FPV Reconstruction
 
-This private repository contains the finished relative-reconstruction baseline, its review material, and the durable project memory.
+This public repository contains the finished relative-reconstruction baseline, its review material, and the durable project memory.
 
 [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1TIZ76z9lq0SDqArLEEBL9D3V-mILEmNX)
 
